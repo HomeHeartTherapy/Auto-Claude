@@ -21,23 +21,12 @@ Each session runs with a fresh context window. Progress is tracked via `feature_
 
 ### Setup
 
-**Step 1:** Copy the `auto-build` folder and `.claude/commands/spec.md` into your project
+**Step 1:** Copy files into your project
 
-Copy the `auto-build` folder into your project (new or existing). Also copy the `.claude/commands/spec.md` file:
+Copy these two things from this repository into your project:
 
-```bash
-# Set the path to your cloned Claude-AutoBuild repository
-AUTOBUILD_REPO="/path/to/Claude-AutoBuild"
-
-# Copy the auto-build folder
-cp -r "$AUTOBUILD_REPO/auto-build" ./auto-build
-
-# Create .claude/commands directory if it doesn't exist
-mkdir -p .claude/commands
-
-# Copy the spec.md file
-cp "$AUTOBUILD_REPO/.claude/commands/spec.md" .claude/commands/spec.md
-```
+1. The `auto-build` folder → copy to your project root
+2. The `.claude/commands/spec.md` file → copy to `.claude/commands/` in your project (create the folder if it doesn't exist)
 
 **Step 2:** Copy `.env.example` to `.env`
 
