@@ -9,7 +9,7 @@ Environment Variables:
     GRAPHITI_ENABLED: Set to "true" to enable Graphiti integration
     OPENAI_API_KEY: Required by Graphiti for embeddings
     GRAPHITI_FALKORDB_HOST: FalkorDB host (default: localhost)
-    GRAPHITI_FALKORDB_PORT: FalkorDB port (default: 6379)
+    GRAPHITI_FALKORDB_PORT: FalkorDB port (default: 6380)
     GRAPHITI_FALKORDB_PASSWORD: FalkorDB password (default: empty)
     GRAPHITI_DATABASE: Graph database name (default: auto_build_memory)
     GRAPHITI_TELEMETRY_ENABLED: Set to "false" to disable telemetry (default: true)
@@ -25,7 +25,7 @@ from typing import Optional
 
 # Default configuration values
 DEFAULT_FALKORDB_HOST = "localhost"
-DEFAULT_FALKORDB_PORT = 6379
+DEFAULT_FALKORDB_PORT = 6380
 DEFAULT_DATABASE = "auto_build_memory"
 
 # Graphiti state marker file (stores connection info and status)
