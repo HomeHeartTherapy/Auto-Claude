@@ -78,7 +78,8 @@ export const useTaskStore = create<TaskState>((set, get) => ({
 
         let status: TaskStatus = t.status;
         if (allCompleted) {
-          status = 'ai_review';
+          // Manual tasks skip AI review and go directly to human review
+          status = t.metadata?.sourceType === 'manual' ? 'human_review' : 'ai_review';
         } else if (anyFailed) {
           status = 'human_review';
         } else if (anyInProgress || chunks.some((c) => c.status === 'completed')) {
