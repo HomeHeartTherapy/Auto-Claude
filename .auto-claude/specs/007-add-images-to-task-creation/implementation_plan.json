@@ -89,5 +89,23 @@
   ],
   "created_at": "2025-12-12T13:42:42.278428",
   "updated_at": "2025-12-12T13:42:42.278428",
-  "spec_file": "/Users/andremikalsen/Documents/Coding/autonomous-coding/.auto-claude/specs/007-add-images-to-task-creation/spec.md"
+  "spec_file": "/Users/andremikalsen/Documents/Coding/autonomous-coding/.auto-claude/specs/007-add-images-to-task-creation/spec.md",
+  "qa_signoff": {
+    "status": "approved",
+    "timestamp": "2025-12-12T14:45:00Z",
+    "qa_session": 1,
+    "report_file": "qa_report.md",
+    "tests_passed": {
+      "unit": "N/A - tests not created",
+      "integration": "N/A - unable to run",
+      "e2e": "N/A - unable to run"
+    },
+    "code_review": {
+      "security": "passed",
+      "patterns": "passed",
+      "types": "passed"
+    },
+    "verified_by": "qa_agent",
+    "notes": "Approved based on thorough code review. Missing unit tests recommended as follow-up."
+  }
 }
